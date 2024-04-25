@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan&display=swap" rel="stylesheet">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="containerOptions">
+    <div class="textOptions">
+      <h1>Lista de Compras</h1>
+      <p>Adicione um ítem:</p>
+    </div>
+
+    <input type="text" placeholder="Digite aqui" id="itemList">
+
+    <select id="categoryList">
+      <option value="">Categoria</option>
+      <option value="alimentos">Alimentos</option>
+      <option value="bebidas">Bebidas</option>
+      <option value="carnes">Carnes</option>
+      <option value="higienePessoal">Higiene Pessoal</option>
+      <option value="hortifruti">Hortifruti</option>
+      <option value="limpeza">Limpeza</option>
+      <option value="outros">Outros</option>
+
+    </select>
+    <button onclick="addItem()" id="add">Adicionar</button>
+  </div>
+
+  <div id="list">
+    <div id="divAlimentos" class="lista">
+      <h4 id="alimentos">Alimentos</h4>
+      <ul id="listAlimentos"></ul>
+    </div>
+    <div id="divBebidas" class="lista">
+      <h4 id="bebidas">Bebidas</h4>
+      <ul id="listBebidas"></ul>
+    </div>
+    <div id="divCarnes" class="lista">
+      <h4 id="carnes">Carnes</h4>
+      <ul id="listCarnes"></ul>
+    </div>
+    <div id="divHigiene" class="lista">
+      <h4 id="higiene">Higiene Pessoal</h4>
+      <ul id="listHigienePessoal"></ul>
+    </div>
+    <div id="divHortifruti" class="lista">
+      <h4 id="hortifruti">Hortifruti</h4>
+      <ul id="listHortifruti"></ul>
+    </div>
+    <div id="divLimpeza" class="lista">
+      <h4 id="limpeza">Limpeza</h4>
+      <ul id="listLimpeza"></ul>
+    </div>
+    <div id="divOutros" class="lista">
+      <h4 id="outros">Outros</h4>
+      <ul id="listOutros"></ul>
+    </div>
+
+  </div>
+
+  <div id="containerLimpar">
+    <button onclick="limparLista()">Limpar Lista</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

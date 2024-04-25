@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sedan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url('./listaCompras.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerOptions {
+    border: thick double gray;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.textOptions {
+    color: #fff;
+    margin: 10px;
+}
+
+.textOptions h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.textOptions p {
+    font-size: 20px;
+}
+
+#itemList {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 15px 0 15px;
+    padding: 5px;
+    font-size: 15px;
+}
+#itemList:focus{
+    background-color: transparent;
+}
+
+#itemList:hover {
+    background-color: rgba(128, 128, 128, 0.393);
+    color: white;
+}
+
+#categoryList {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 15px 0 15px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+#categoryList option {
+    background-color: gray;
+    color: white;
+}
+#categoryList:hover {
+    background-color: rgba(189, 188, 188, 0.133);
+    color: white;
+}
+
+#add{
+    width: 40%;
+    background-color: transparent;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 15px 0 15px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+}
+#add:hover{
+    background-color: rgba(91, 89, 89, 0.6);
+}
+
+#add:active{
+    background-color: rgba(91, 89, 89, 0.332);
+}
+
+.itens{
+    display: flex;
+    align-items: cent;
+}
+#itensList{
+    color: #ccc;
+    font-size: 15px;
+}
+
+#list{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+    gap: 40px
+}
+.lista{
+    display: none;
+    justify-content: center;
+}
+
+#list h4{
+    display: none;
+    color: #ccc;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#list ul{
+    color: #ccc;
+    font-size: 14px;
+}
+
+#list ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+#list ul li:hover{
+transform: scale(1.08); /* Ajuste o valor conforme necessário para o efeito de zoom desejado */
+transition: transform 0.5s ease;
+}
+
+#list button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#containerLimpar{
+    border: thick double gray;
+    border-radius: 10px;
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#containerLimpar button{
+    width: 40%;
+    background-color: rgba(68, 64, 64, 0.721);;
+    color: #ccc;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 15px 0 15px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+}
+
+#containerLimpar button:hover{
+    background-color: rgba(91, 89, 89, 0.521);
+}
+
+#containerLimpar button:active{
+    background-color: rgba(91, 89, 89, 0.164);
+}
+
+
