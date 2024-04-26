@@ -40,6 +40,7 @@ body {
 
 .textOptions p {
     font-size: 20px;
+    margin: 10px;
 }
 
 #itemList {
@@ -52,7 +53,8 @@ body {
     padding: 5px;
     font-size: 15px;
 }
-#itemList:focus{
+
+#itemList:focus {
     background-color: transparent;
 }
 
@@ -77,12 +79,13 @@ body {
     background-color: gray;
     color: white;
 }
+
 #categoryList:hover {
     background-color: rgba(189, 188, 188, 0.133);
     color: white;
 }
 
-#add{
+#add {
     width: 40%;
     background-color: transparent;
     color: #ccc;
@@ -96,36 +99,35 @@ body {
     outline: none;
     align-self: center;
 }
-#add:hover{
+
+#add:hover {
     background-color: rgba(91, 89, 89, 0.6);
 }
 
-#add:active{
+#add:active {
     background-color: rgba(91, 89, 89, 0.332);
 }
 
-.itens{
+.itens {
     display: flex;
-    align-items: cent;
-}
-#itensList{
-    color: #ccc;
-    font-size: 15px;
+    align-items: center;
 }
 
-#list{
+#list {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;;
-    gap: 40px
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 5px;
 }
-.lista{
+
+.lista {
     display: none;
     justify-content: center;
 }
 
-#list h4{
+#list h4 {
     display: none;
     color: #ccc;
     font-size: 20px;
@@ -134,29 +136,35 @@ body {
     text-align: center;
 }
 
-#list ul{
+#list ul {
     color: #ccc;
     font-size: 14px;
 }
 
-#list ul li{
+#list ul li {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
 }
-#list ul li:hover{
-transform: scale(1.08); /* Ajuste o valor conforme necessário para o efeito de zoom desejado */
-transition: transform 0.5s ease;
+
+#list ul li:hover {
+    transform: scale(1.08);
+    transition: transform 0.5s ease;
 }
 
-#list button{
+#list button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-#containerLimpar{
+#list button img {
+    width: 18px;
+    height: 18px;
+}
+
+#containerLimpar {
     border: thick double gray;
     border-radius: 10px;
     width: 50%;
@@ -166,9 +174,9 @@ transition: transform 0.5s ease;
     margin-top: 15px;
 }
 
-#containerLimpar button{
+#containerLimpar button {
     width: 40%;
-    background-color: rgba(68, 64, 64, 0.721);;
+    background-color: rgba(68, 64, 64, 0.721);
     color: #ccc;
     border: none;
     border-radius: 10px;
@@ -181,12 +189,79 @@ transition: transform 0.5s ease;
     align-self: center;
 }
 
-#containerLimpar button:hover{
+#containerLimpar button:hover {
     background-color: rgba(91, 89, 89, 0.521);
 }
 
-#containerLimpar button:active{
+#containerLimpar button:active {
     background-color: rgba(91, 89, 89, 0.164);
 }
 
 
+@media (max-width: 470px) {
+    .containerOptions {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .textOptions {
+        margin: 5px;
+    }
+
+    .textOptions h1 {
+        font-size: 25px;
+    }
+
+    .textOptions p {
+        font-size: 15px;
+    }
+
+    #itemList {
+        font-size: 10px;
+        margin: 5px 10px 0 10px;
+    }
+
+    #categoryList {
+        font-size: 10px;
+        margin: 5px 10px 0 10px;
+    }
+
+    #add {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    #list{
+        column-gap: 15px;
+    }
+
+    #list h4 {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+    #list ul {
+        font-size: 9px;
+    }
+
+    #list ul li {
+        gap: 10px;
+    }
+
+    #list button img {
+        width: 12px;
+        height: 12px;
+    }
+
+    #containerLimpar {
+        width: 90%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    #containerLimpar button {
+        width: 80%;
+        margin: 0;
+        font-size: 10px;
+    }
+}

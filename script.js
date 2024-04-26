@@ -117,7 +117,6 @@ addList = (object) => {
     document.getElementById(object.idDiv).style.display = "block";
 
     document.getElementById('itemList').value = '';
-    document.getElementById('categoryList').value = '';
 
     lista.push(object)
 
